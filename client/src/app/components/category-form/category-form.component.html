@@ -1,0 +1,17 @@
+<div class="col-md-4 offset-md-4">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <input type="text" name="nombre" [(ngModel)]="category.nombre_cat"  placeholder="Nombre" class="form-control" autofocus>
+                </div>
+                <div class="form-group">
+                    <textarea name="descripcion" [(ngModel)]="category.descripcion_categoria_cat" placeholder="Descripcion" rows="2" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-success btn-block" (click)="edit ? updateCategory() : saveNewCategory()">
+                    <span class="fas fa-save"></span> Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
